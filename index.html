@@ -6,20 +6,20 @@
     /* CSS for styling the page */
     body {
       font-family: Arial, sans-serif;
-      background-color: #F5F5DC; /* Beige color for the background */
+      background-color: #f4f4f4; /* background color */
+      color: #333; /* text color */
     }
     h1 {
       text-align: center;
-      color: #00008B; /* Dark blue color for the heading */
+      color: #0099ff; /* heading color */
     }
     .section {
       margin: 50px 0;
-      background-color: #FFFFFF; /* White color for the section background */
+      background-color: #ffffff; /* section background color */
       padding: 20px;
     }
     .section h2 {
       margin-bottom: 20px;
-      color: #00008B; /* Dark blue color for the section heading */
     }
     .section ul {
       list-style-type: none;
@@ -27,13 +27,6 @@
     }
     .section li {
       margin-bottom: 10px;
-    }
-    /* Additional styles for the projects section */
-    .section#projects {
-      background-color: #ADD8E6; /* Light blue color for the projects section background */
-    }
-    .section#projects li {
-      color: #00008B; /* Dark blue color for the project items */
     }
   </style>
 </head>
@@ -47,7 +40,7 @@
     <h2>Certifications</h2>
     <ul id="certifications-list"></ul>
   </div>
-  <div class="section" id="projects">
+  <div class="section">
     <h2>Projects</h2>
     <ul id="projects-list"></ul>
   </div>
@@ -73,4 +66,12 @@
     for (var i = 0; i < certifications.length; i++) {
       var item = document.createElement("li");
       item.innerHTML = certifications[i];
-      certificationsList.
+      certificationsList.appendChild(item);
+    }
+
+    for (var i = 0; i < projects.length; i++) {
+      var item = document.createElement("li");
+      item.innerHTML = projects[i].name + " (" + projects[i].language + ")";
+      projectsList.appendChild(item);
+    }
+ 
