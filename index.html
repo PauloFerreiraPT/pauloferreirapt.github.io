@@ -4,6 +4,11 @@
     <title>My GitHub Homepage</title>
     <style>
         /* Add some custom styling */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
         .profile-pic {
             border-radius: 50%;
             width: 150px;
@@ -15,33 +20,35 @@
     </style>
   </head>
   <body>
-    <div class="section">
-        <img class="profile-pic" src="YOUR_PROFILE_PICTURE_URL" alt="Profile Picture">
-        <h1>YOUR_NAME</h1>
-        <p>YOUR_BIO</p>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="https://www.linkedin.com/in/YOUR_LINKEDIN_PROFILE">LinkedIn</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-      </ul>
-    </nav>
-    <div class="section" id="projects">
-        <h2>Projects</h2>
-        <ul>
-          <li>Project 1 - <a href="https://github.com/YOUR_USERNAME/PROJECT_1">Link</a></li>
-          <li>Project 2 - <a href="https://github.com/YOUR_USERNAME/PROJECT_2">Link</a></li>
-          <li>Project 3 - <a href="https://github.com/YOUR_USERNAME/PROJECT_3">Link</a></li>
-        </ul>
-    </div>
-    <div class="section" id="skills">
-        <h2>Skills</h2>
-        <ul>
-          <li>Skill 1</li>
-          <li>Skill 2</li>
-          <li>Skill 3</li>
-        </ul>
+    <div class="container">
+        <div class="section">
+            <img class="profile-pic" src="YOUR_PROFILE_PICTURE_URL" alt="Profile Picture">
+            <h1>YOUR_NAME</h1>
+            <p>YOUR_BIO</p>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="https://www.linkedin.com/in/YOUR_LINKEDIN_PROFILE">LinkedIn</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+          </ul>
+        </nav>
+        <div class="section" id="projects">
+            <h2>Projects</h2>
+            <ul>
+              <li>Project 1 - <a href="https://github.com/YOUR_USERNAME/PROJECT_1">Link</a></li>
+              <li>Project 2 - <a href="https://github.com/YOUR_USERNAME/PROJECT_2">Link</a></li>
+              <li>Project 3 - <a href="https://github.com/YOUR_USERNAME/PROJECT_3">Link</a></li>
+            </ul>
+        </div>
+        <div class="section" id="skills">
+            <h2>Skills</h2>
+            <ul>
+              <li>Skill 1</li>
+              <li>Skill 2</li>
+              <li>Skill 3</li>
+            </ul>
+        </div>
     </div>
   </body>
 </html>
