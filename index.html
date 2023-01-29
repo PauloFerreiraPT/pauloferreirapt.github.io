@@ -1,49 +1,55 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Curriculum and Skills</title>
-</head>
-<body>
-  <h1>Curriculum</h1>
-  <ul id="curriculum-list">
-    <!-- curriculum items will be added here dynamically with JavaScript -->
-  </ul>
+    <head>
+        <title>My IT DevOps Page</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="#about-section">About</a>
+                <a href="#services-section">Services</a>
+                <a href="#resources-section">Resources</a>
+                <a href="#contact-section">Contact</a>
+            </nav>
+        </header>
 
-  <h1>Skills</h1>
-  <ul id="skills-list">
-    <!-- skills items will be added here dynamically with JavaScript -->
-  </ul>
+        <main>
+            <section id="about-section">
+                <h2>About</h2>
+                <p>Welcome to my IT DevOps page! Here you will find information and resources related to IT operations and infrastructure management.</p>
+            </section>
 
-  <script>
-    // array of curriculum items
-    var curriculum = [
-      "Math",
-      "Science",
-      "English",
-      "Social Studies"
-    ];
+            <section id="services-section">
+                <h2>Services</h2>
+                <ul>
+                    <li>Continuous Integration and Deployment</li>
+                    <li>Infrastructure as Code</li>
+                    <li>Cloud Migration</li>
+                </ul>
+            </section>
 
-    // array of skills
-    var skills = [
-      "Communication",
-      "Problem Solving",
-      "Critical Thinking",
-      "Collaboration"
-    ];
+            <section id="resources-section">
+                <h2>Resources</h2>
+                <ul>
+                    <li><a href="https://devops.com">DevOps.com</a></li>
+                    <li><a href="https://aws.amazon.com">AWS</a></li>
+                </ul>
+            </section>
 
-    // function to add items to a list
-    function addItemsToList(listId, items) {
-      var list = document.getElementById(listId);
-      for (var i = 0; i < items.length; i++) {
-        var item = document.createElement("li");
-        item.innerHTML = items[i];
-        list.appendChild(item);
-      }
-    }
+            <section id="contact-section">
+                <h2>Contact</h2>
+                <form>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" placeholder="Enter your phone number">
+                    <input type="submit" value="Submit">
+                </form>
+            </section>
+        </main>
 
-    // call the function to add items to the curriculum and skills lists
-    addItemsToList("curriculum-list", curriculum);
-    addItemsToList("skills-list", skills);
-  </script>
-</body>
+        <footer>
+            <p>Copyright © 2022 Your Name</p>
+        </footer>
+    </body>
 </html>
