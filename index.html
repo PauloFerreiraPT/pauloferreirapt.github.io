@@ -6,15 +6,20 @@
     /* CSS for styling the page */
     body {
       font-family: Arial, sans-serif;
+      background-color: #F5F5DC; /* Beige color for the background */
     }
     h1 {
       text-align: center;
+      color: #00008B; /* Dark blue color for the heading */
     }
     .section {
       margin: 50px 0;
+      background-color: #FFFFFF; /* White color for the section background */
+      padding: 20px;
     }
     .section h2 {
       margin-bottom: 20px;
+      color: #00008B; /* Dark blue color for the section heading */
     }
     .section ul {
       list-style-type: none;
@@ -22,6 +27,13 @@
     }
     .section li {
       margin-bottom: 10px;
+    }
+    /* Additional styles for the projects section */
+    .section#projects {
+      background-color: #ADD8E6; /* Light blue color for the projects section background */
+    }
+    .section#projects li {
+      color: #00008B; /* Dark blue color for the project items */
     }
   </style>
 </head>
@@ -35,12 +47,22 @@
     <h2>Certifications</h2>
     <ul id="certifications-list"></ul>
   </div>
+  <div class="section" id="projects">
+    <h2>Projects</h2>
+    <ul id="projects-list"></ul>
+  </div>
   <script>
-    // JavaScript to populate the list of curriculum and certifications
+    // JavaScript to populate the list of curriculum, certifications, and projects
     var curriculum = ["Degree in Computer Science", "Master's in Artificial Intelligence", "Ph.D. in Machine Learning"];
     var certifications = ["Certified Machine Learning Engineer", "Certified Data Scientist", "Certified Deep Learning Professional"];
+    var projects = [
+      {name: "Project 1", language: "Python"},
+      {name: "Project 2", language: "JavaScript"},
+      {name: "Project 3", language: "R"}
+    ];
     var curriculumList = document.getElementById("curriculum-list");
     var certificationsList = document.getElementById("certifications-list");
+    var projectsList = document.getElementById("projects-list");
 
     for (var i = 0; i < curriculum.length; i++) {
       var item = document.createElement("li");
@@ -51,8 +73,4 @@
     for (var i = 0; i < certifications.length; i++) {
       var item = document.createElement("li");
       item.innerHTML = certifications[i];
-      certificationsList.appendChild(item);
-    }
-  </script>
-</body>
-</html>
+      certificationsList.
