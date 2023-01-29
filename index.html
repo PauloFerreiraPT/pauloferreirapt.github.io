@@ -4,16 +4,18 @@
     <title>My GitHub Projects</title>
     <style>
       body {
-        background-color: #f9f9f9;
+        background-image: url("bg-image.jpg");
+        background-size: cover;
       }
       h1 {
         text-align: center;
         color: #333;
       }
       .project-card {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
         margin-top: 20px;
       }
       .project-card a {
@@ -22,30 +24,25 @@
         padding: 20px;
         background-color: #f0f0f0;
         border-radius: 5px;
+        margin: 10px;
+        flex-basis: calc(33.33% - 20px);
         text-align: center;
       }
       .project-card a:hover {
         background-color: #e0e0e0;
-      }
-      /* Responsive design */
-      @media only screen and (max-width: 1024px) {
-        .project-card {
-          grid-template-columns: repeat(2, 1fr);
-        }
-      }
-      @media only screen and (max-width: 600px) {
-        .project-card {
-          grid-template-columns: repeat(1, 1fr);
-        }
-      }
-    </style>
+      }  /* Responsive design */
+  @media (max-width: 600px) {
+    .project-card a {
+      flex-basis: 100%;
+    }
+  }
+</style>
   </head>
   <body>
     <h1>My GitHub Projects</h1>
     <div class="project-card">
       <a href="https://github.com/username/project1">Project 1</a>
       <a href="https://github.com/username/project2">Project 2</a>
-      <a href="https://github.com/username/project3">Project 3</a>
       <a href="https://github.com/username/project4">Project 4</a>
       <a href="https://github.com/username/project5">Project 5</a>
       <a href="https://github.com/username/project6">Project 6</a>
