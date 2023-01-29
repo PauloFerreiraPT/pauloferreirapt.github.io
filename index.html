@@ -20,6 +20,9 @@
     }
     .section h2 {
       margin-bottom: 20px;
+      background-color: #0099ff; /* section heading background color */
+      color: #fff; /* section heading text color */
+      padding: 10px;
     }
     .section ul {
       list-style-type: none;
@@ -28,6 +31,19 @@
     .section li {
       margin-bottom: 10px;
       cursor: pointer; /* change cursor to pointer when hovering over list items */
+    }
+    /* Add styles for the different types of items in the list */
+    .curriculum-item {
+      background-color: #f0f0f0; /* curriculum item background color */
+      padding: 10px;
+    }
+    .certification-item {
+      background-color: #f0f0f0; /* certification item background color */
+      padding: 10px;
+    }
+    .project-item {
+      background-color: #f0f0f0; /* project item background color */
+      padding: 10px;
     }
   </style>
 </head>
@@ -55,19 +71,4 @@
       {name: "Project 3", language: "R", url: "project3.html"}
     ];
     var curriculumList = document.getElementById("curriculum-list");
-    var certificationsList = document.getElementById("certifications-list");
-    var projectsList = document.getElementById("projects-list");
-
-    for (var i = 0; i < curriculum.length; i++) {
-      var item = document.createElement("li");
-      item.innerHTML = curriculum[i];
-      curriculumList.appendChild(item);
-    }
-
-    for (var i = 0; i < certifications.length; i++) {
-      var item = document.createElement("li");
-      item.innerHTML = certifications[i];
-      certificationsList.appendChild(item);
-    }
-
-    for (var i = 0
+    var certificationsList
