@@ -1,55 +1,58 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>My IT DevOps Page</title>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <a href="#about-section">About</a>
-                <a href="#services-section">Services</a>
-                <a href="#resources-section">Resources</a>
-                <a href="#contact-section">Contact</a>
-            </nav>
-        </header>
+<head>
+  <title>About Me</title>
+  <style>
+    /* CSS for styling the page */
+    body {
+      font-family: Arial, sans-serif;
+    }
+    h1 {
+      text-align: center;
+    }
+    .section {
+      margin: 50px 0;
+    }
+    .section h2 {
+      margin-bottom: 20px;
+    }
+    .section ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    .section li {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>About Me</h1>
+  <div class="section">
+    <h2>Curriculum</h2>
+    <ul id="curriculum-list"></ul>
+  </div>
+  <div class="section">
+    <h2>Certifications</h2>
+    <ul id="certifications-list"></ul>
+  </div>
+  <script>
+    // JavaScript to populate the list of curriculum and certifications
+    var curriculum = ["Degree in Computer Science", "Master's in Artificial Intelligence", "Ph.D. in Machine Learning"];
+    var certifications = ["Certified Machine Learning Engineer", "Certified Data Scientist", "Certified Deep Learning Professional"];
+    var curriculumList = document.getElementById("curriculum-list");
+    var certificationsList = document.getElementById("certifications-list");
 
-        <main>
-            <section id="about-section">
-                <h2>About</h2>
-                <p>Welcome to my IT DevOps page! Here you will find information and resources related to IT operations and infrastructure management.</p>
-            </section>
+    for (var i = 0; i < curriculum.length; i++) {
+      var item = document.createElement("li");
+      item.innerHTML = curriculum[i];
+      curriculumList.appendChild(item);
+    }
 
-            <section id="services-section">
-                <h2>Services</h2>
-                <ul>
-                    <li>Continuous Integration and Deployment</li>
-                    <li>Infrastructure as Code</li>
-                    <li>Cloud Migration</li>
-                </ul>
-            </section>
-
-            <section id="resources-section">
-                <h2>Resources</h2>
-                <ul>
-                    <li><a href="https://devops.com">DevOps.com</a></li>
-                    <li><a href="https://aws.amazon.com">AWS</a></li>
-                </ul>
-            </section>
-
-            <section id="contact-section">
-                <h2>Contact</h2>
-                <form>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" placeholder="Enter your email">
-                    <label for="phone">Phone:</label>
-                    <input type="tel" id="phone" placeholder="Enter your phone number">
-                    <input type="submit" value="Submit">
-                </form>
-            </section>
-        </main>
-
-        <footer>
-            <p>Copyright © 2022 Your Name</p>
-        </footer>
-    </body>
+    for (var i = 0; i < certifications.length; i++) {
+      var item = document.createElement("li");
+      item.innerHTML = certifications[i];
+      certificationsList.appendChild(item);
+    }
+  </script>
+</body>
 </html>
