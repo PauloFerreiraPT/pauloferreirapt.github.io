@@ -1,70 +1,79 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My Skills</title>
-  <style>
-    /* CSS for styling the page */
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4; /* background color */
-      color: #333; /* text color */
-      text-align: center; /* center text */
-    }
-    h1 {
-      color: #0099ff; /* heading color */
-    }
-    /* Add styles for the different types of items in the list */
-    .programming-language {
-      background-color: #f0f0f0; /* programming language background color */
-      padding: 10px;
-    }
-    .scripting-language {
-      background-color: #f0f0f0; /* scripting language background color */
-      padding: 10px;
-    }
-    /* Style for the LinkedIn link */
-    a {
-      color: #0077b5; /* link text color */
-    }
-  </style>
+    <title>My Curriculum</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>My Skills</h1>
-  <div class="section">
-    <h2>Programming Languages</h2>
-    <ul id="programming-languages-list"></ul>
-  </div>
-  <div class="section">
-    <h2>Scripting Languages</h2>
-    <ul id="scripting-languages-list"></ul>
-  </div>
-  <div class="section">
-    <a href="https://www.linkedin.com/in/pauloazf">LinkedIn Profile</a>
-  </div>
-  <script>
-    // JavaScript to populate the list of programming languages and scripting languages
-    var programmingLanguages = ["Java", "Python", "C++", "C#"];
-    var scriptingLanguages = ["JavaScript", "Ruby", "PHP", "Bash"];
-    var programmingLanguagesList = document.getElementById("programming-languages-list");
-    var scriptingLanguagesList = document.getElementById("scripting-languages-list");
-    
-    // Loop through the programming languages array and create list items
-    for (var i = 0; i < programmingLanguages.length; i++) {
-      var li = document.createElement("li");
-      li.innerHTML = programmingLanguages[i];
-      li.classList.add("programming-language");
-      li.onclick = function() {
-        window.location.href = "programming-language-info.html";
-      }
-      programmingLanguagesList.appendChild(li);
-    }
-
-    // Loop through the scripting languages array and create list items
-    for (var i = 0; i < scriptingLanguages.length; i++) {
-      var li = document.createElement("li");
-      li.innerHTML = scriptingLanguages[i];
-      li.classList.add("scripting-language");
-      li.onclick = function() {
-        window.location.href = "scripting-language-info.html";
-      }
-      scriptingLanguagesList.
+    <header>
+        <h1>My Name</h1>
+        <nav>
+            <ul>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#work-experience">Work Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about-me">
+            <h2>About Me</h2>
+            <p>Some information about me goes here.</p>
+        </section>
+        <section id="education">
+            <h2>Education</h2>
+            <ul>
+                <li>
+                    <h3>Degree Name, Institution Name</h3>
+                    <p>Information about the degree goes here.</p>
+                </li>
+                <li>
+                    <h3>Degree Name, Institution Name</h3>
+                    <p>Information about the degree goes here.</p>
+                </li>
+            </ul>
+        </section>
+        <section id="work-experience">
+            <h2>Work Experience</h2>
+            <ul>
+                <li>
+                    <h3>Job Title, Company Name</h3>
+                    <p>Information about the job goes here.</p>
+                </li>
+                <li>
+                    <h3>Job Title, Company Name</h3>
+                    <p>Information about the job goes here.</p>
+                </li>
+            </ul>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Skill 1</li>
+                <li>Skill 2</li>
+                <li>Skill 3</li>
+            </ul>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li>
+                    <h3>Project Name</h3>
+                    <p>Information about the project goes here.</p>
+                </li>
+                <li>
+                    <h3>Project Name</h3>
+                    <p>Information about the project goes here.</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright © 2022 My Name</p>
+    </footer>
+</body>
+</html>
