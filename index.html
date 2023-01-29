@@ -27,6 +27,7 @@
     }
     .section li {
       margin-bottom: 10px;
+      cursor: pointer; /* change cursor to pointer when hovering over list items */
     }
   </style>
 </head>
@@ -49,9 +50,9 @@
     var curriculum = ["Degree in Computer Science", "Master's in Artificial Intelligence", "Ph.D. in Machine Learning"];
     var certifications = ["Certified Machine Learning Engineer", "Certified Data Scientist", "Certified Deep Learning Professional"];
     var projects = [
-      {name: "Project 1", language: "Python"},
-      {name: "Project 2", language: "JavaScript"},
-      {name: "Project 3", language: "R"}
+      {name: "Project 1", language: "Python", url: "project1.html"},
+      {name: "Project 2", language: "JavaScript", url: "project2.html"},
+      {name: "Project 3", language: "R", url: "project3.html"}
     ];
     var curriculumList = document.getElementById("curriculum-list");
     var certificationsList = document.getElementById("certifications-list");
@@ -69,9 +70,4 @@
       certificationsList.appendChild(item);
     }
 
-    for (var i = 0; i < projects.length; i++) {
-      var item = document.createElement("li");
-      item.innerHTML = projects[i].name + " (" + projects[i].language + ")";
-      projectsList.appendChild(item);
-    }
- 
+    for (var i = 0
